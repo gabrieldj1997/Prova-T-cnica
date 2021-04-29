@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M6oCetLuCzXfeWzuLqRLTPGfbLF/xMTxhJDqWbYhkuM/mDNigDIsoIIlWrdqzrnmdfMaa/rSn/fRKIh706jJ7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabri\\Desktop\\projetos\\Prova Técnica\\ClientRegister(API)\\Source (API)\\Source (API).csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

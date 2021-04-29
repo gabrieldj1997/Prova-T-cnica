@@ -1,0 +1,22 @@
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).csprojAssemblyReference.cache
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).AssemblyInfo.cs
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Source (API).exe
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Source (API).deps.json
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Source (API).runtimeconfig.json
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Source (API).runtimeconfig.dev.json
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Source (API).dll
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Source (API).pdb
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).RazorTargetAssemblyInfo.cache
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\staticwebassets\Source (API).StaticWebAssets.Manifest.cache
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\staticwebassets\Source (API).StaticWebAssets.xml
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).dll
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).pdb
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).genruntimeconfig.cache
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\gabri\Desktop\projetos\Prova Técnica\ClientRegister(API)\Source (API)\obj\Debug\netcoreapp3.1\Source (API).csproj.CopyComplete

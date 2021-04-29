@@ -1,0 +1,3 @@
+@Imports Source__API_.Areas.HelpPage.ModelDescriptions
+@ModelType SimpleTypeModelDescription
+@Model.Documentation
