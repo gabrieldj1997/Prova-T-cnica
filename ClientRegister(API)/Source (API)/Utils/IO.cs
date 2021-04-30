@@ -12,11 +12,11 @@ namespace Source__API_.Utils
     {
         public IO()
         {
-            _path = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\clientes";
-            _tempFile = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\clientes\client_temp.txt";
-            _finalFile = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\clientes\client_final.txt";
-            _logPath = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\logs";
-            _logFile = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\logs\log.txt";
+            _path = GetDataPath();
+            _tempFile = _path + @"\clientes\client_temp.txt";
+            _finalFile = _path + @"\clientes\client_final.txt";
+            _logPath = _path + @"\logs";
+            _logFile = _path + @"\logs\log.txt";
             PathExist();
         }
         public string _path;
@@ -30,7 +30,11 @@ namespace Source__API_.Utils
             string path = "";
             for (int i = 0; i < pathTemp.Length - 1; i++)
             {
-                path += pathTemp[i] + "\\";
+                path += pathTemp[i];
+                if (i < pathTemp.Length - 1)
+                {
+                    path += "\\";
+                }
             }
             return path;
         }
