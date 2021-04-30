@@ -10,5 +10,6 @@ namespace Source__API_.Models
         IList<Client> GetListClient(string path);
         Client GetClient(int id, string path);
         int RegisterClient(Client client, string path);
+        Client DeleteClient(int id, string path);
     }
 }

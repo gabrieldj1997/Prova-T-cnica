@@ -9,14 +9,14 @@ namespace SourceConsole.Utils
     {
         public IO()
         {
-            _path = GetDataPath();
-            _tempFile = _path + "clientes\\client_temp.txt";
-            _finalFile = _path + "clientes\\client_final.txt";
-            _logPath = _path + "log";
-            _logFile = _logPath + "\\logConsole.txt";
+            _path = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\clientes";
+            _tempFile = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\clientes\client_temp.txt";
+            _finalFile = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\clientes\client_final.txt";
+            _logPath = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\logs";
+            _logFile = @"C:\Users\gabri\Desktop\projetos\Prova Técnica\Gerenciamento de Cliente\logs\log.txt";
             PathExist();
         }
-        public string _path; 
+        public string _path;
         public string _tempFile;
         public string _finalFile;
         public string _logPath;
@@ -33,20 +33,35 @@ namespace SourceConsole.Utils
         }
         public void PathExist()
         {
-            if (Directory.Exists(_path + "clientes"))
+            if (Directory.Exists(_path))
             {
-                if(File.Exists(_path + "clientes\\client_final.txt")) { Console.WriteLine("Existe temporaria"); }
-                else { File.Create(_path+"clientes\\client_final.txt"); Console.WriteLine("Tabela criada"); }
+                if (File.Exists(_finalFile))
+                {
+                    Console.WriteLine("Existe a tabela");
+                }
+                else
+                {
+                    using (var myFile = File.Create(_finalFile))
+                    {
+                        Console.WriteLine("Tabela criada");
+                    }
+                    File.WriteAllText(_finalFile, "[]");
+                }
             }
             else
             {
-                Directory.CreateDirectory(_path+"\\clientes");
+                Directory.CreateDirectory(_path);
                 PathExist();
             }
             if (Directory.Exists(_logPath))
             {
                 if (File.Exists(_logFile)) { Console.WriteLine("Log existente"); }
-                else { File.Create(_logFile); Console.WriteLine("Log criado"); }
+                else 
+                { 
+                    var file = File.Create(_logFile);
+                    file.Close();
+                    Console.WriteLine("Log criado"); 
+                }
             }
             else
             {
@@ -64,7 +79,8 @@ namespace SourceConsole.Utils
             }
             else
             {
-                File.Create(_logFile);
+                var file = File.Create(_logFile);
+                file.Close();
                 Log(log);
             }
         }

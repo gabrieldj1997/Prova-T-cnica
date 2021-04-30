@@ -60,7 +60,8 @@ namespace Source__API_.Models
                 }
                 else
                 {
-                    File.Create(path);
+                    var file = File.Create(path);
+                    file.Close();
                     RegisterClient(client, path);
                 }
                 return 0;
@@ -69,6 +70,40 @@ namespace Source__API_.Models
                 IO io = new IO();
                 io.Log(DateTime.Now.ToString("MM/dd hh:mm:ss : "+e.Message));
                 return 0;
+            }
+        }
+        public Client DeleteClient(int id, string path)
+        {
+            try
+            {
+                Client client = null;
+                string json_list;
+                using (StreamReader sr = new StreamReader(path))
+                {
+                    json_list = sr.ReadToEnd();
+                    sr.Close();
+                }
+                if(json_list != "")
+                {
+                    IList<Client> list_client = JsonConvert.DeserializeObject<IList<Client>>(json_list);
+                    for(int i = 0; i < list_client.Count; i++)
+                    {
+                        if(list_client[i].id == id)
+                        {
+                            client = list_client[i];
+                            list_client.Remove(list_client[i]);
+                        }
+                    }
+                    File.WriteAllText(path, JsonConvert.SerializeObject(list_client));
+                    return client;
+                }
+                else
+                {
+                    return null;
+                }
+            }catch(Exception e)
+            {
+                return null;
             }
         }
     }

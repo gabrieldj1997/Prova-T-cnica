@@ -55,7 +55,13 @@ namespace SourceConsole.Models
 					string linha = sr.ReadLine();
                     sr.Close();
 					File.WriteAllText(path,"");
-					return JsonConvert.DeserializeObject<IList<Client>>(linha);
+					try
+					{
+						return JsonConvert.DeserializeObject<IList<Client>>(linha);
+					}catch(Exception e)
+                    {
+						return null;
+                    }
                 }
             }
             else
@@ -73,7 +79,8 @@ namespace SourceConsole.Models
 
                 if (!File.Exists(path))
                 {
-					File.Create(path);
+					var file = File.Create(path);
+					file.Close();
                 }
 
 				using (StreamReader st = new StreamReader(path))

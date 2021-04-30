@@ -36,7 +36,15 @@ namespace Source__API_.Controllers
             try
             {
                 Client client = cl.GetClient(id, io._finalFile);
-                return Ok(id);
+                if (client != null)
+                {
+                    return Ok(client);
+                }
+                else
+                {
+                    return Ok("Sem clientes com esse id, por favor consulte os clientes cadastrados para" +
+                                        " inserir um id valido");
+                }
             }catch(Exception)
             {
                 return Ok("Sem clientes com esse id, por favor consulte os clientes cadastrados para" +
@@ -63,6 +71,26 @@ namespace Source__API_.Controllers
             }catch(Exception)
             {
                 return Ok("cliente não cadastrado, por favor utilize o seguinte modelo json: {'nome':'Gabriel','cpf':'06442151190'}'");
+            }
+        }
+        [HttpGet]
+        [Route("test")]
+        public ActionResult Test()
+        {
+            return Ok("Aplicação no ar!!!");
+        }
+        [HttpDelete]
+        [Route("delete/{id}")]
+        public ActionResult DeleteRegister(int id)
+        {
+            Client client = cl.DeleteClient(id, io._finalFile);
+            if(client != null)
+            {
+                return Ok(client);
+            }
+            else
+            {
+                return Ok(@"Nenhum client com id {id} encontrado, por favor verifique a tabela de clientes.");
             }
         }
     }

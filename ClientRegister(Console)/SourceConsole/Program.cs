@@ -51,7 +51,7 @@ namespace SourceConsole
                     Console.WriteLine(DateTime.Now.ToString("MM/dd hh:mm:ss") +  " : Sem cadastro");
                     io.Log(DateTime.Now.ToString("MM/dd hh:mm:ss") + " : Sem cadastro");
                 }
-                System.Threading.Thread.Sleep(60000);
+                System.Threading.Thread.Sleep(30000);
             }
         }
     }
